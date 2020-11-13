@@ -21,6 +21,7 @@
    
 ### Crie um diretório chamado moodledata dentro do /var e dê permissão total a ele, e reinicie o Apache
 
+
     >mkdir /var/moodledata
     
     >chmod 777 moodledata
@@ -33,6 +34,7 @@
 A próxima tela mostrada é muito importante, aqui é referente ao banco de dados do Moodle. Antes de prosseguir vamos criar o banco.
 
 ### Vá no terminal e digite os comando para criar o banco, usuário, e dar privilégios ao mesmo
+
 
     >mysql -u root -p
     
