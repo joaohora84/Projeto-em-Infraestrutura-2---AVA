@@ -36,7 +36,7 @@ A próxima tela mostrada é muito importante, aqui é referente ao banco de dado
 
     >mysql -u root -p
     
-    >CREATE DATABASE moodle DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+    >CREATE DATABASE moodle DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
     
     >CREATE USER 'moodle'@'localhost' IDENTIFIED WITH mysql_native_password BY 'SENHA';
     
