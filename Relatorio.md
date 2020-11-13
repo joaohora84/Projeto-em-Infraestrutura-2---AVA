@@ -27,6 +27,7 @@
     
     >service apache2 restart
     
+    
     Na tela de instação do Moodle clique em próximo.
     
 A próxima tela mostrada é muito importante, aqui é referente ao banco de dados do Moodle. Antes de prosseguir vamos criar o banco.
@@ -50,13 +51,21 @@ A próxima tela mostrada é muito importante, aqui é referente ao banco de dado
  As seguintes linhas no arquivo config.php devem estar de acordo com essas, se não o Moodle vai informar o erro e sugerir que seja alterado o arquivo config.php.
  
  $CFG->dbtype = 'mysql'; // mysql or postgres7 (for now)
+ 
  $CFG->dbhost = 'localhost'; // eg localhost or db.isp.com
+ 
  $CFG->dbname = 'moodle'; // database name, eg moodle
+ 
  $CFG->dbuser = 'moodle'; // your database username
+ 
  $CFG->dbpass = 'moodle'; // your database password
+ 
  $CFG->prefix = 'mdl_'; // Prefix to use for all table names
+ 
  Verifique a linha $CFG->wwwroot = 'http://localhost/moodle';
+ 
  Verifique a linha $CFG->dirroot = '/var/www/moodle';
+ 
  Verifique a linha $CFG->dataroot = '/var/moodledata';
  
  Se tudo certo volte e continue a instação.
