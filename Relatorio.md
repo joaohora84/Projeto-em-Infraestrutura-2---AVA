@@ -22,11 +22,11 @@
 ### Crie um diretório chamado moodledata dentro do /var e dê permissão total a ele, e reinicie o Apache
 
 
-    >mkdir /var/moodledata
+    mkdir /var/moodledata
     
-    >chmod 777 moodledata
+    chmod 777 moodledata
     
-    >service apache2 restart
+    service apache2 restart
     
     
     Na tela de instação do Moodle clique em próximo.
@@ -36,15 +36,15 @@ A próxima tela mostrada é muito importante, aqui é referente ao banco de dado
 ### Vá no terminal e digite os comando para criar o banco, usuário, e dar privilégios ao mesmo
 
 
-    >mysql -u root -p
+    mysql -u root -p
     
-    >CREATE DATABASE moodle DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+    CREATE DATABASE moodle DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
     
-    >CREATE USER 'moodle'@'localhost' IDENTIFIED WITH mysql_native_password BY 'SENHA';
+    CREATE USER 'moodle'@'localhost' IDENTIFIED WITH mysql_native_password BY 'SENHA';
     
-    >GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABLES, DROP, INDEX,ALTER ON moodle.* moodle@localhost;
+    GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,CREATE TEMPORARY TABLES, DROP, INDEX,ALTER ON moodle.* moodle@localhost;
     
-    >quit;
+    quit;
     
  ### Na tela de instalão do Moodle informamos os dados do banco e clicamos em próximo
  
