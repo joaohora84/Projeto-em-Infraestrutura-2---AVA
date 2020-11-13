@@ -19,7 +19,7 @@
    
    Se tudo estiver ok clique em próximo. Nesta tela também é mostrado o diretório onde será instalado o Moodle.
    
-### Crie um diretório chamado moodledata dentro do /var e dê permissão total a ele, e reinicie o Apache.
+### Crie um diretório chamado moodledata dentro do /var e dê permissão total a ele, e reinicie o Apache
 
     >mkdir /var/moodledata
     
@@ -32,7 +32,7 @@
     
 A próxima tela mostrada é muito importante, aqui é referente ao banco de dados do Moodle. Antes de prosseguir vamos criar o banco.
 
-### Vá no terminal e digite os comando para criar o banco, usuário, e dar privilégios ao mesmo.
+### Vá no terminal e digite os comando para criar o banco, usuário, e dar privilégios ao mesmo
 
     >mysql -u root -p
     
@@ -44,7 +44,7 @@ A próxima tela mostrada é muito importante, aqui é referente ao banco de dado
     
     >quit;
     
- ### Na tela de instalão do Moodle informamos os dados do banco e clicamos em próximo.
+ ### Na tela de instalão do Moodle informamos os dados do banco e clicamos em próximo
  
  O Moodle fará uma varredura no sistema para saber se é compatível ou não.
  
